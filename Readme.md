@@ -26,7 +26,8 @@ def test_convnet():
 2) Check if you have normalized your inputs
 
 
-3)Make Sure the test loss is never zero (Happens when you try applying a softmax over a single value 
+
+3) Make Sure the test loss is never zero (Happens when you try applying a softmax over a single value 
 
 ```
 def test_loss():
@@ -63,3 +64,6 @@ def test_gen_training():
   for b,a in zip(before_des, after_des):
     assert (a == b).all()
 ```
+
+5) Check if you have not initialized garbage collector in tensorflow.
+
